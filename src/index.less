@@ -1,0 +1,52 @@
+@layout-header-background: #001529;
+// 全局样式
+html,body,#root,.ant-layout{
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+/*滚动条样式*/
+::-webkit-scrollbar{
+    width:5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    background: @layout-header-background;
+}
+
+.ant-menu-item{
+    margin: 0!important;
+}
+
+.font12{
+    font-size: 12px;
+}
+.font14{
+    font-size: 14px;
+}
+.font16{
+    font-size: 16px;
+}
+.font26{
+    font-size: 26px;
+}
+[center]{
+    text-align: center;
+}
+
+.ant-modal-footer{
+    text-align: center;
+}
+
+.ant-btn .iconfont{
+    margin-right: 5px;
+}
+// 查询工具栏
+.query-tools{
+    margin-bottom: 20px!important;
+}
+
+.ant-table-tbody  tr:nth-child(even){
+    background-color: #f0f0f0ab!important;
+}

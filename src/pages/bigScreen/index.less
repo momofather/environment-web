@@ -1,0 +1,279 @@
+@keyframes myAnimation {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+[border=true]{
+    border: 1px solid #247D9E;
+}
+[background=true]{
+    background: linear-gradient(0deg, #093757, #051A36);
+}
+.big-screen{
+    height: 100%;
+    overflow: hidden;
+    background: url(./images/bg.png);
+    background-size: 100% 100%;
+    .logo{
+        position: fixed;
+        top: 13px;
+        left: 10px;
+        cursor: pointer;
+        width: 30px;
+    }
+    .big-header{
+        background: url(./images/heda-bg.png);
+        background-size: 100% 100%;
+        margin-bottom: 5px;
+        color: #b3f1fe;
+        text-align: center;
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing: 10px;
+        line-height: 60px;
+        .time{
+            font-size: 14px;
+            letter-spacing: 0px;
+            position: absolute;
+            right: 10px;
+        }
+    }
+    .row{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 15px 10px;
+        .row1_left{
+            background: url(./images/water_lisenter.png);
+            background-size: 100% 100%;
+            width: 470px;
+            padding: 25px 0;
+            text-align: center;
+            .title{
+                color: #01F1E8;
+                font-size: 26px;
+                text-align: left;
+                padding-left: 30px;
+            }
+            .data{
+                margin: 20px 0;
+                display: inline-block;
+                color: #fff;
+                .value{
+                    // background: url(./images/a.gif) center -10px;
+                    background-size: 150% 150%;
+                    border: 5px solid rgba(34,167,227, 0.5);
+                    width: 128px;
+                    height: 128px;
+                    padding: 32px 0;
+                    font-size: 18px;
+                    position: relative;
+                    animation: myAnimation linear infinite;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    span{
+                        color: #01FB15;
+                        font-weight: bold;
+                        font-size: 26px;
+                    }
+                    .unit{
+                        line-height: 5px;
+                    }
+                    .wave1,.wave2,.wave3{
+                        position: absolute;
+                        width: 200%;
+                        height: 200%;
+                        animation: inherit;
+                        top: 85%;
+                    }
+                    .wave2{
+                        left: -35%;
+                        background: #0eaffe;
+                        opacity: .7;
+                        border-radius: 35%;
+                        animation-duration: 7s;
+                    }
+                    .wave3{
+                        left: -35%;
+                        background: #0f7ea4;
+                        opacity: .3;
+                        border-radius: 33%;
+                        animation-duration: 11s;
+                    }
+                    .wave1{
+                        left: -25%;
+                        background: #33cfff;
+                        opacity: .7;
+                        border-radius: 40%;
+                        animation-duration: 5s;
+                    }
+                }
+                .name{
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+            .in_total{
+                background: url(./images/flow.png);
+                background-size: 100% 100%;
+                width: 320px;
+                margin: 10px auto;
+                .in_total_name{
+                    line-height: 40px;
+                    font-size: 22px;
+                }
+                .in_total_name,.label,.unit{
+                    color: #fff;
+                }
+                .value_box{
+                    height: 120px;
+                    padding-top: 30px;
+                }
+                .value{
+                    color: #01FB15;
+                    display: inline-block;
+                    margin: 0 10px;
+                    line-height: 60px;
+                    font-size: 36px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .row2_center{
+            background: url(./images/line.png);
+            background-size: 100% 100%;
+            flex: 2;
+        }
+        .row2_left{
+            background: url(./images/shc.png);
+            background-size: 100% 100%;
+            display: flex;
+            flex: 3;
+            padding: 10px 0;
+            .row2_left_1{
+                margin-left: 20px;
+                width: 150px;
+                .title{
+                    color: #01F1E8;
+                    font-size: 26px;
+                    margin-top: 15px;
+                }
+                .title_item{
+                    color: #fff;
+                    line-height: 30px;
+                    margin: 20px 0;
+                    padding: 0 15px;
+                    cursor: pointer;
+                }
+                .title_item.active{
+                    background: url(./images/shc_btn_active.png);
+                    background-size: 100% 100%;
+                }
+            }
+            .row2_left_2{
+                background: url(./images/haoyang.png);
+                background-size: 100% 100%;
+                height: 274px;
+                margin-left: 50px;
+                padding: 0 30px;
+                .title{
+                    color: #01F1E8;
+                    text-align: center;
+                    font-size: 16px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .title_item{
+                    line-height: 40px;
+                    font-size: 16px;
+                    text-align: center;
+                    .label{
+                        color: #fff;
+                    }
+                    .val{
+                        color: #01FB15;
+                        font-weight: bold;
+                        margin: 0 10px;
+                        display: inline-block;
+                        width: 80px;
+                        font-size: 24px;
+                    }
+                    .unit{
+                        color: #F1FF0B;
+                    }
+                }
+            }
+            .row2_left_3{
+                margin-left: 50px;
+                .mlss{
+                    background: url(./images/mlss.png);
+                    background-size: 100% 100%;
+                    text-align: center;
+                    height: 94px;
+                    width: 194px;
+                    margin: 30px 0;
+                    .title{
+                        color: #01F1E8;
+                        font-size: 16px;
+                        line-height: 50px;
+                    }
+                    .title_item{
+                        text-align: center;
+                        .val{
+                            color: #01FB15;
+                            margin-right: 10px;
+                            font-size: 24px;
+                            font-weight: bold;
+                        }
+                        .unit{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .row2_right{
+            width: 470px;
+            background: url(./images/error.png);
+            background-size: 100% 100%;
+            .title{
+                color: #01F1E8;
+                font-size: 26px;
+                line-height: 60px;
+                margin-left: 40px;
+            }
+            .list{
+                color: red;
+                line-height: 34px;
+                margin-left: 40px;
+                font-size: 20px;
+            }
+        }
+        [border=true]:first-child{
+            margin-left: 0;
+        }
+        [border=true]:last-child{
+            margin-right: 0;
+        }
+    }
+    .sheng-hua-chi{
+        margin-bottom: 10px;
+        .header{
+            display: flex;
+            padding: 0;
+            background-color: #006EB6;
+            line-height: 38px;
+            div{
+                flex: 1;
+                cursor: pointer;
+            }
+            .active{
+                background-color: #051A36;
+            }
+        }
+        .body{
+            padding: 10px;
+            height: 570px;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.img-box{
+    position: relative;
+    img{
+        width: 100%;
+    }
+    [bg="true"]{
+        background-color: rgba(36, 125, 158, 0.8);
+        padding: 0 5px;
+        border-radius: 3px;
+    }
+}
+@keyframes myAnimation {
+    0% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.ant-card-bordered{
+    border: 1px solid #247D9E!important;
+}
+._1,._2{
+border: 2px solid transparent;
+    position: absolute;
+    height: 7%;
+    width: 22%;
+    cursor: pointer;
+}
+._1{
+    top: 48%;
+    left: 29%;
+}
+._2{
+    top: 68%;
+    left: 29%;
+}
+._1:hover,._2:hover{
+    border-color: aqua;
+}
+.lamb_modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.1);
+    .modal-box{
+        background-color: #093161;
+        width: 1200px;
+        color: #fff;
+        margin: 100px auto;
+        border-radius: 5px;
+        padding: 10px 20px;
+        .modal-title{
+            color: #AFECF9;
+            font-size: 18px;
+        }
+        .modal-body{
+            margin-top: 10px;
+            .lamb-row{
+                display: flex;
+                text-align: center;
+                line-height: 40px;
+                div{
+                    border-right: 1px solid aqua;
+                    border-bottom: 1px solid aqua;
+                    flex: 1;
+                }
+                div:nth-child(1){
+                    border-left: 1px solid aqua;
+                }
+                div.normal{
+                    background-color: #0bff4893;
+                }
+            }
+            .lamb-row:nth-child(1){
+                border-top: 1px solid aqua;
+            }
+        }
+        .close-btn{
+            background-color: #1E6BD5;
+            line-height: 30px;
+            width: 100%;
+            text-align: center;
+            margin: 20px auto 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    }
+}
+.loding{
+    color: #fff;
+    text-align: center;
+}

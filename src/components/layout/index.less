@@ -1,0 +1,53 @@
+.header{
+    padding: 0 0 0 10px;
+    display: flex;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 100;
+    .logo{
+        font-size: 17px;
+        font-weight: bold;
+        margin-right: 24px;
+        min-width: 166px;
+    }
+    .header-middle{
+        flex: 1;
+    }
+    .header-right{
+        padding-right: 10px;
+        .msg{
+            position: relative;
+            .msg-count{
+                color: #fff;
+                background-color: red;
+                font-size: 12px;
+                height: 20px;
+                position: relative;
+                top: -13px;
+                left: -10px;
+                padding: 2px 4px;
+                border-radius: 5px;
+            }
+        }
+        .user{
+            color: @layout-header-color;
+            cursor: pointer;
+        }
+        .photo{
+            margin-top: -5px;
+        }
+    }
+}
+.sider{
+    box-shadow:5px 0  5px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 100;
+}
+.body{
+    overflow: auto;
+    .content{
+        background: #fff;
+        padding: 10px;
+        min-height: auto;
+    }
+}

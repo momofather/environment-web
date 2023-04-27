@@ -1,0 +1,34 @@
+.hp-loading-wrap {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+}
+.hp-loading-wrap .loading-content {
+    width: 48px;/*no*/
+    height: 48px;/*no*/
+    margin: 0 auto;
+    text-align: center;
+}
+.hp-loading-wrap .loading-img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(./loding.png);
+    animation:turn 1s linear infinite;
+}
+@keyframes turn{
+    0%{-webkit-transform:rotate(0deg);}
+    25%{-webkit-transform:rotate(90deg);}
+    50%{-webkit-transform:rotate(180deg);}
+    75%{-webkit-transform:rotate(270deg);}
+    100%{-webkit-transform:rotate(360deg);}
+}

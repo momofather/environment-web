@@ -1,0 +1,40 @@
+.del{
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    right: -10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.shebie{
+    position: absolute;
+    background-color: #fff;
+    font-size: 12px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    line-height: 12px;
+}
+.status0,.status1{
+    position: absolute;
+    font-size: 16px;
+    cursor: pointer;
+}
+.status0{
+    color: #008000!important;
+}
+.status1{
+    color: red!important;
+    animation: myAnimation 0.5s infinite;
+}
+@keyframes myAnimation {
+    0% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+img{
+    max-width: 100%;
+}
